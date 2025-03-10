@@ -12,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/blog/:id" element={<BlogPost />} />
         <Route
           path="/profile"
           element={<ProtectedRoute element={<Profile />} isAuthenticated={isAuthenticated} />}
