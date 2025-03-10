@@ -1,16 +1,25 @@
-import React from "react";
-import RegistrationForm from "./components/RegistrationForm";
-import FormikForm from "./components/formikForm";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import FormikForm from './components/FormikForm';
 
-const App = () => {
+function App() {
   return (
-    <div style={{ padding: "20px" }}>
-      <h1>Form Handling in React</h1>
-      <RegistrationForm />
-      <hr />
-      <FormikForm />
-    </div>
+    <Router>
+      <div>
+        <nav>
+          <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/register">Register</Link></li>
+          </ul>
+        </nav>
+
+        <Routes>
+          <Route path="/" element={<h1>Welcome to the Form Handling App</h1>} />
+          <Route path="/register" element={<FormikForm />} />
+        </Routes>
+      </div>
+    </Router>
   );
-};
+}
 
 export default App;
