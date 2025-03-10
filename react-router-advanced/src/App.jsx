@@ -1,23 +1,18 @@
-import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Profile from "./pages/Profile";
-import NotFound from "./pages/NotFound";
+import Home from "./components/Home";
+import BlogPost from "./pages/BlogPost";
+import NotFound from "./components/NotFound";
 
-const App = () => {
+function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        
-        {/* Profile with Nested Routes */}
-        <Route path="/profile/*" element={<Profile />} />
-
-        {/* 404 Not Found Page */}
+        <Route path="/blog/:id" element={<BlogPost />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );
-};
+}
 
 export default App;
