@@ -1,9 +1,11 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // ✅ Import routing components
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import RecipeList from './components/RecipeList';
 import AddRecipeForm from './components/AddRecipeForm';
 import SearchBar from './components/SearchBar';
-import RecipeDetails from './components/RecipeDetails'; // ✅ Import RecipeDetails
+import RecipeDetails from './components/RecipeDetails';
+import FavoritesList from './components/FavoritesList';
+import RecommendationsList from './components/RecommendationsList';
 
 function App() {
   return (
@@ -12,9 +14,11 @@ function App() {
         <h1>Recipe Sharing App</h1>
         <SearchBar />
         <AddRecipeForm />
-        <Routes> {/* ✅ Wrap routes inside <Routes> */}
-          <Route path="/" element={<RecipeList />} /> {/* ✅ Define main page route */}
-          <Route path="/recipe/:id" element={<RecipeDetails />} /> {/* ✅ Define recipe detail route */}
+        <FavoritesList />
+        <RecommendationsList />
+        <Routes>
+          <Route path="/" element={<RecipeList />} />
+          <Route path="/recipe/:id" element={<RecipeDetails />} />
         </Routes>
       </div>
     </Router>
