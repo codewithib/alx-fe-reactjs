@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import FormikForm from '../formikForm.js';
+import FormikForm from './formikForm.js';
 
 function App() {
   return (
