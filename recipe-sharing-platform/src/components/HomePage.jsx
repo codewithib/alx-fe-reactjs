@@ -39,10 +39,19 @@ function HomePage() {
             >
               View Recipe
             </Link>
+
+                    <Link
+        to="/add-recipe"
+        className="block w-full mt-4 text-center bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition duration-300"
+        >
+        Add New Recipe
+        </Link>
+
           </div>
         ))}
       </div>
     </div>
+    
   );
 }
 
