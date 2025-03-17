@@ -1,21 +1,44 @@
 [
-    {
-      "id": 1,
-      "title": "Spaghetti Carbonara",
-      "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
-      "image": "https://via.placeholder.com/150"
-    },
-    {
-      "id": 2,
-      "title": "Chicken Tikka Masala",
-      "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
-      "image": "https://via.placeholder.com/150"
-    },
-    {
-      "id": 3,
-      "title": "Avocado Toast",
-      "summary": "Simple yet delicious, made with fresh avocados, toast, and seasonings.",
-      "image": "https://via.placeholder.com/150"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "title": "Spaghetti Carbonara",
+    "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "200g spaghetti",
+      "2 eggs",
+      "50g parmesan cheese",
+      "100g bacon",
+      "Salt and black pepper"
+    ],
+    "instructions": [
+      "Boil the spaghetti in salted water until al dente.",
+      "Fry the bacon until crispy.",
+      "Beat the eggs and mix with grated parmesan cheese.",
+      "Drain spaghetti and mix with bacon.",
+      "Quickly stir in the egg mixture off the heat.",
+      "Season with black pepper and serve."
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Chicken Tikka Masala",
+    "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato-based gravy.",
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "500g chicken",
+      "1 cup yogurt",
+      "2 tbsp tikka masala spice",
+      "1 onion, chopped",
+      "2 tomatoes, pureed",
+      "1/2 cup cream"
+    ],
+    "instructions": [
+      "Marinate chicken with yogurt and spices for 2 hours.",
+      "Grill the chicken until cooked.",
+      "Fry onions, then add tomato puree and cook.",
+      "Add grilled chicken and simmer with cream.",
+      "Serve with rice or naan."
+    ]
+  }
+]
