@@ -10,9 +10,13 @@ function AddRecipeForm() {
   const [errors, setErrors] = useState({});
 
   // Handle input change
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setRecipe((prev) => ({ ...prev, [name]: value }));
+  const handleChange = (event) => {
+    const name = event.target.name;
+    const value = event.target.value; // Explicitly using target.value
+    setRecipe((prevRecipe) => ({
+      ...prevRecipe,
+      [name]: value,
+    }));
   };
 
   // Validate form inputs
@@ -32,8 +36,8 @@ function AddRecipeForm() {
   };
 
   // Handle form submission
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = (event) => {
+    event.preventDefault();
     if (validateForm()) {
       console.log("Recipe submitted:", recipe);
       alert("Recipe added successfully!");
